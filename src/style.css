@@ -8,8 +8,34 @@ body{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: white;
     border-radius: 10px;
     height: 350px;
     width: 250px;
+}
+
+.upperSuit, .lowerSuit{
+    position: absolute;
+    font-size: 4rem;
+}
+
+.upperSuit{
+    top: -10px;
+    left: 10px;
+}
+
+.lowerSuit{
+    bottom: -10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.cardValue{
+    font-size: 5rem;
+    font-weight: bold;
 }
