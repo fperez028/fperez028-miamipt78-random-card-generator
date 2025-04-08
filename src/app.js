@@ -18,8 +18,17 @@ window.onload = function() {
       upperSuitElement.style.color = "red";
       lowerSuitElement.style.color = "red";
       cardValueElement.style.color = "red";
+    } else {
+      upperSuitElement.style.color = "black";
+      lowerSuitElement.style.color = "black";
+      cardValueElement.style.color = "black";
     }
   }
 
   cardRandomizer();
+
+  const button = document.querySelector(".newCardButton");
+  button.addEventListener("click", function() {
+    cardRandomizer();
+  });
 };
